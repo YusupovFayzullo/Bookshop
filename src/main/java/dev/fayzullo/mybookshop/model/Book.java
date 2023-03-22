@@ -30,4 +30,5 @@ public class Book {
     private boolean deleted;
     private Integer coverId;
     private Integer documentId;
+
 }

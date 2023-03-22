@@ -17,6 +17,7 @@ public class BookSearchServlet extends HttpServlet {
         String search = req.getParameter("search");
         int category_id = Integer.parseInt(req.getParameter("category_id"));
         BookDAO bookDAO = BookDAO.getInstance();
+        System.out.println(bookDAO);
 //        if(category_id==BookServlet.all2.size()){
 //
 //            bookDAO.getByName(search,0);

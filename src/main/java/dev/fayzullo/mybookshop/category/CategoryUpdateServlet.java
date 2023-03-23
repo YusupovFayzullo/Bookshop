@@ -23,7 +23,6 @@ public class CategoryUpdateServlet extends HttpServlet {
         Category dao = categoryDao.findById(categoryId);
         request.setAttribute("category", dao);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/books/updatecategory.jsp");
-        System.out.println("Salom");
         dispatcher.forward(request, resp);
     }
 

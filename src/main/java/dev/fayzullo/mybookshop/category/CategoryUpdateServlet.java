@@ -21,7 +21,7 @@ public class CategoryUpdateServlet extends HttpServlet {
         CategoryDao categoryDao = CategoryDao.getInstance();
         long categoryId = Long.parseLong(pathInfo.substring(1));
         Category dao = categoryDao.findById(categoryId);
-        request.setAttribute("categories", dao);
+        request.setAttribute("category", dao);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/books/updatecategory.jsp");
         dispatcher.forward(request, resp);
     }
